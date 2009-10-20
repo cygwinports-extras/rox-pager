@@ -1,0 +1,11 @@
+--- origsrc/Pager/src/configure.in	2008-04-14 11:49:22.000000000 -0500
++++ src/Pager/src/configure.in	2009-10-19 23:31:29.462247200 -0500
+@@ -2,6 +2,8 @@ dnl Process this file with autoconf to p
+ AC_INIT(main.c)
+ AC_CONFIG_HEADER(config.h)
+ 
++m4_include([rox-clib.m4])
++
+ [ if [ -f configure ]; then ]
+ 	AC_MSG_ERROR([Please run configure from the build directory (try ../AppRun --compile)])
+ 	exit 1

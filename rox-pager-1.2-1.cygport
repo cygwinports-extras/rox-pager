@@ -1,0 +1,9 @@
+ORIG_PN="Pager"
+inherit rox
+
+SRC_URI="mirror://sourceforge/rox/${ORIG_PN}-${PV}.tar.gz"
+SRC_DIR=.
+
+PATCH_URI="1.2-aclocal.patch"
+
+ROX_APP=${ORIG_PN}
