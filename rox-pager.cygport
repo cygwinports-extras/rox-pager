@@ -1,0 +1,19 @@
+ORIG_PN="Pager"
+inherit rox
+
+NAME="rox-pager"
+VERSION=1.2
+RELEASE=1
+CATEGORY="ROX"
+SUMMARY="ROX desktop pager"
+DESCRIPTION="ROX is a fast, user friendly desktop based on RISC OS which makes
+extensive use of drag-and-drop. The interface revolves around the file manager,
+or filer, following the traditional Unix view that 'everything is a file'
+rather than trying to hide the filesystem beneath start menus, wizards, or
+druids.  This package provides the desktop pager."
+SRC_URI="mirror://sourceforge/rox/${ORIG_PN}-${VERSION}.tar.gz"
+SRC_DIR=.
+
+PATCH_URI="1.2-aclocal.patch"
+
+ROX_APP=${ORIG_PN}
